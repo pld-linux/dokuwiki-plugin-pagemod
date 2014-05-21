@@ -4,7 +4,7 @@
 Summary:	Plugin to add information to pages in a structured way (via forms)
 Name:		dokuwiki-plugin-%{plugin}
 Version:	1.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://freecode.baselineit.net/dokuwiki/pagemod-%{version}.zip
@@ -14,9 +14,9 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.520
 Requires:	dokuwiki >= 20091225
 Requires:	dokuwiki-plugin-bureaucracy
-Requires:	php-common >= 4:%{php_min_version}
-Requires:	php-date
-Requires:	php-pcre
+Requires:	php(core) >= %{php_min_version}
+Requires:	php(date)
+Requires:	php(pcre)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
