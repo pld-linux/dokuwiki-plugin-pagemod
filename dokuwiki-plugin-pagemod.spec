@@ -1,6 +1,5 @@
 %define		plugin		pagemod
 %define		php_min_version 5.0.0
-%include	/usr/lib/rpm/macros.php
 Summary:	Plugin to add information to pages in a structured way (via forms)
 Name:		dokuwiki-plugin-%{plugin}
 Version:	1.2
